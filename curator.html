@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Каталоги</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content m-auto">
+        <div class="row w-100">
+            <div class="sidebar col-md-2">
+                <ul class="list-group">
+                    <a class="list-group-item bg-gray text-white" href="#0">Клиенты</a>
+                    <a class="list-group-item bg-gray text-white active" href="./curator.html">Кураторы</a>
+                    <a class="list-group-item bg-gray text-white" href="#0">Лог</a>
+                    <a class="list-group-item bg-gray text-white" href="./catalog.html">Каталоги</a>
+                    <a class="list-group-item bg-gray text-white" href="#0">Уведомления</a>
+                    <a class="list-group-item bg-gray text-white" href="#0">Настройки</a>
+                </ul>
+            </div>
+            <div class="col-md-10 bg-light pl-3 pt-3">
+                <h1>Кураторы</h1>
+                <div class="bg-white my-3">
+                    <form class="col-md-7 p-3">
+                        <p class="font-weight-bold">Добавление куратора</p>
+                        <div class="form-group row">
+                            <div class="col-md-3 font-weight-bold">Статус</div>
+                            <div class="col-md-7">
+                                <div class="form-check form-check-inline mr-4">
+                                    <input class="form-check-input" type="radio" name="status" id="status1" value="option1" checked>
+                                    <label class="form-check-label" for="status1">активен</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="status" id="status2" value="option2" checked>
+                                    <label class="form-check-label" for="status2">заблокирован</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="fio" class="col-md-3 col-form-label font-weight-bold">ФИО</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" id="fio" placeholder="Владимир Мартынов">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="phone" class="col-md-3 col-form-label font-weight-bold">Тел.</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" id="phone" placeholder="+7 (921) 344-45-45">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <select class="custom-select">
+                                    <option selected="" value="email">email</option>
+                                    <option value="whatsapp">whatsapp</option>
+                                    <option value="viber">viber</option>
+                                    <option value="telegram">telegram</option>
+                                    <option value="доп. телефон">доп. телефон</option>
+                                </select>
+                            </div>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" id="phone" placeholder="+7 (921) 344-45-45">
+                            </div>
+                            <i class="form-icon fas fa-times fa-2x text-danger"></i>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <select class="custom-select">
+                                    <option selected="" value="email">email</option>
+                                    <option value="whatsapp">whatsapp</option>
+                                    <option value="viber">viber</option>
+                                    <option value="telegram">telegram</option>
+                                    <option value="доп. телефон">доп. телефон</option>
+                                </select>
+                            </div>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" id="phone" placeholder="+7 (921) 344-45-45">
+                            </div>
+                            <i class="form-icon fas fa-plus fa-2x text-success mr-3"></i>
+                            <i class="form-icon fas fa-times fa-2x text-danger"></i>
+                        </div>
+                        <div class="form-group row">
+                            <label for="comment" class="col-md-3 col-form-label font-weight-bold">Коммент</label>
+                            <div class="col-md-7">
+                                <textarea class="form-control" id="comment" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary px-5">Сохранить</button>
+                    </form>
+                </div>
+                <div class="form-group form-inline">
+                    <select class="custom-select mr-4">
+                        <option selected="" value="Куратор">Куратор</option>
+                        <option value="Админ">Админ</option>
+                        <option value="Владимир Иванов">Владимир Иванов</option>
+                    </select>
+                    <select class="custom-select">
+                        <option selected="" value="Статус">Статус</option>
+                        <option value="Активен">Активен</option>
+                        <option value="Заблокирован">Заблокирован</option>
+                    </select>
+                </div>
+                <table class="table bg-white">
+                    <thead>
+                        <tr>
+                            <th scope="col"><input type="checkbox" name="a" value="1417"></th>
+                            <th colspan="2" scope="col">ФИО</th>
+                            <th colspan="1" scope="col">Контакты</th>
+                            <th colspan="1" scope="col">Статус</th>
+                            <th colspan="1" scope="col">Назначено</th>
+                            <th colspan="1" scope="col">Добавил</th>
+                            <th colspan="1" scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><input type="checkbox" name="a" value="1417"></th>
+                            <th colspan="2">Vladimir Martynov</th>
+                            <th>+7 922 345 45 67<br />
+                                mail@mail.ru<br />
+                                телега</th>
+                            <th>активен</th>
+                            <th>5 компаний</th>
+                            <th>5 компаний</th>
+                            <th class="text-center">
+                                <a href="#">Детальнее</a><br />
+                                <a href="#">Заблокировать</a><br />
+                                <a href="#">удалить</a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" name="a" value="1417"></th>
+                            <th colspan="2">Kira Matrosova</th>
+                            <th>+7 922 345 45 67<br />
+                                mail@mail.ru<br />
+                                телега</th>
+                            <th>заблокирован</th>
+                            <th>0 компаний</th>
+                            <th>0 компаний</th>
+                            <th class="text-center">
+                                <a href="#">Детальнее</a><br />
+                                <a href="#">Заблокировать</a><br />
+                                <a href="#">удалить</a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" name="a" value="1417"></th>
+                            <th colspan="2">Irina Ponoroshku</th>
+                            <th>+7 922 345 45 67<br />
+                                mail@mail.ru<br />
+                                телега</th>
+                            <th>активен</th>
+                            <th>0 компаний</th>
+                            <th>0 компаний</th>
+                            <th class="text-center">
+                                <a href="#">Детальнее</a><br />
+                                <a href="#">Заблокировать</a><br />
+                                <a href="#">удалить</a>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="float-right bg-white p-2">
+                    <div class="form-inline">
+                        <span class="text-secondary mr-3">Строк на странице:</span>
+                        <select class="custom-select mr-3">
+                            <option selected>10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                        <span class="text-secondary mr-3">1-5 из 5</span>
+                        <span class="text-secondary">
+                            <i class="fas fa-angle-left fa-lg mr-3"></i>
+                            <i class="fas fa-angle-right fa-lg"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+</body>
+
+</html>
