@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Лог</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content m-auto">
+        <div class="row w-100">
+            <div class="sidebar col-md-2">
+                <ul class="list-group">
+                    <a class="list-group-item bg-gray text-white active" href="./clients.html">Клиенты</a>
+                    <a class="list-group-item bg-gray text-white" href="./curator.html">Кураторы</a>
+                    <a class="list-group-item bg-gray text-white" href="./sales.html">Продажи</a>
+                    <a class="list-group-item bg-gray text-white" href="./log.html">Лог</a>
+                    <a class="list-group-item bg-gray text-white" href="./catalog.html">Каталоги</a>
+                    <a class="list-group-item bg-gray text-white" href="./notification.html">Уведомления</a>
+                    <a class="list-group-item bg-gray text-white" href="./settings-roles.html">Настройки</a>
+                </ul>
+            </div>
+            <div class="col-md-10 bg-light pl-3 pt-3">
+                <h1>Клиенты</h1>
+                <div class="catalog-filters form-inline my-3">
+                    <select class="custom-select mr-2 ">
+                        <option selected>Статус</option>
+                        <option value="1">Активен</option>
+                        <option value="2">Заполнение реквизитов</option>
+                        <option value="3">Отключен</option>
+                    </select>
+                    <select class="custom-select mr-2">
+                        <option selected>Оплата</option>
+                        <option value="1">Оплачено</option>
+                        <option value="2">Не оплачено</option>
+                        <option value="3">Просрочка</option>
+                    </select>
+                    <button type="button" class="btn btn-primary btn-sm ml-5 py-2 px-4"><i class="fas fa-plus fa-lg mr-2"></i>Добавить
+                        каталог</button>
+                </div>
+                <div class="row mt-4">
+                    <div class="shadow p-4 mb-3 col-md-5">
+                        <h2>ООО "Цифрология и ещё длинный кусок названия"</strong></h2>
+                        <p><strong>Компаний:</strong> 1</p>
+                        <p><strong>Продажа:</strong> прямая регистрация</p>
+                        <p><strong>Статус:</strong> активен</p>
+                        <p><strong>Дата создания:</strong> 23.01.2019</p>
+                        <p><strong>Куратор:</strong> Мария Иванова</p>
+                        <p><strong>Оплата:</strong> до 23.01.2020</p>
+                        <p><strong>SMS баланс:</strong> 300 р.</p>
+                        <p><a href="#"> Детальнее</a></p>
+                        <p><a href="#"> Сменить куратора</a></p>
+                        <p><a href="#"> Отключить</a></p>
+                        <p><a href="#"> удалить</a></p>
+                    </div>
+                    <div class="shadow p-4 mb-3 col-md-5 offset-md-1">
+                        <h2>ООО "Сибернетика"</h2>
+                        <p><strong>Компаний:</strong> 12</p>
+                        <p><strong>Продажа:</strong> Дмитрий Крылов</p>
+                        <p><strong>Статус:</strong> активен</p>
+                        <p><strong>Дата создания:</strong> 23.01.2019</p>
+                        <p><strong>Куратор:</strong> Мария Иванова</p>
+                        <p><strong>Оплата:</strong> не оплачено</p>
+                        <p><strong>SMS баланс:</strong> 300 р.</p>
+                        <p><a href="#"> Детальнее</a></p>
+                        <p><a href="#"> Сменить куратора</a></p>
+                        <p><a href="#"> Отключить</a></p>
+                        <p><a href="#"> удалить</a></p>
+                    </div>
+                    <div class="shadow p-4 mb-3 col-md-5">
+                        <h2>ООО "Лента"</h2>
+                        <p><strong>Компаний:</strong> 300</p>
+                        <p><strong>Продажа:</strong> Дмитрий Крылов</p>
+                        <p><strong>Статус:</strong> активен</p>
+                        <p><strong>Куратор:</strong> Мария Иванова</p>
+                        <p><strong>Оплата:</strong> просрочка с 23.01.2019</p>
+                        <p><strong>SMS баланс:</strong> 300 р.</p>
+                        <p><a href="#"> Детальнее</a></p>
+                        <p><a href="#"> Сменить куратора</a></p>
+                        <p><a href="#"> Отключить</a></p>
+                        <p><a href="#"> удалить</a></p>
+                    </div>
+                    <div class="shadow p-4 mb-3 col-md-5 offset-md-1">
+                        <h2>ООО "Окей"</h2>
+                        <p><strong>Компаний:</strong> 1</p>
+                        <p><strong>Продажа:</strong> Дмитрий Крылов</p>
+                        <p><strong>Статус:</strong> активен</p>
+                        <p><strong>Дата создания:</strong> 23.01.2019</p>
+                        <p><strong>Куратор:</strong> не оплачено</p>
+                        <p><strong>Оплата:</strong> до 23.01.2020</p>
+                        <p><strong>SMS баланс:</strong> 300 р.</p>
+                        <p><a href="#"> Детальнее</a></p>
+                        <p><a href="#"> Сменить куратора</a></p>
+                        <p><a href="#"> Отключить</a></p>
+                        <p><a href="#"> удалить</a></p>
+                    </div>
+                </div>
+                <div class="float-right bg-white p-2">
+                    <div class="form-inline">
+                        <span class="text-secondary mr-3">Строк на странице:</span>
+                        <select class="custom-select mr-3">
+                            <option selected>10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                        <span class="text-secondary mr-3">1-5 из 5</span>
+                        <span class="text-secondary">
+                            <i class="fas fa-angle-left fa-lg mr-3"></i>
+                            <i class="fas fa-angle-right fa-lg"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+</body>
+
+</html>

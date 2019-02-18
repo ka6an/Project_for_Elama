@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Лог</title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content m-auto">
+        <div class="row w-100">
+            <div class="sidebar col-md-2">
+                <ul class="list-group">
+                    <a class="list-group-item bg-gray text-white" href="./clients.html">Клиенты</a>
+                    <a class="list-group-item bg-gray text-white" href="./curator.html">Кураторы</a>
+                    <a class="list-group-item bg-gray text-white" href="./sales.html">Продажи</a>
+                    <a class="list-group-item bg-gray text-white" href="./log.html">Лог</a>
+                    <a class="list-group-item bg-gray text-white" href="./catalog.html">Каталоги</a>
+                    <a class="list-group-item bg-gray text-white" href="./notification.html">Уведомления</a>
+                    <a class="list-group-item bg-gray text-white active" href="./settings-roles.html">Настройки</a>
+                </ul>
+            </div>
+            <div class="col-md-10 bg-light pl-3 pt-3">
+                <div class="bg-white py-2 px-3 mb-3">
+                    <a class="font-weight-bold text-dark" href="./settings-roles.html" title="Роли">Роли</a>
+                    <a class="text-dark ml-3" href="./settings-sms.html" title="sms">SMS</a>
+                </div>
+                <div class="bg-white px-3 py-2 mb-3">
+                    <div class="form-group mb-2">
+                        <input type="text" name="" placeholder="Укажите название роли" class="w-25">
+                    </div>
+                    <div class="form-group mb-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="status" id="role1" value="role1">
+                            <label class="form-check-label" for="role1">Удалять компанию</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="status" id="role2" value="role2">
+                            <label class="form-check-label" for="role2">Добавлять компанию</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="status" id="role3" value="role3">
+                            <label class="form-check-label" for="role3">Изменять ключевую информацию</label>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="status" id="role4" value="role4">
+                            <label class="form-check-label" for="role4">Изменять базовую информацию</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="status" id="role5" value="role5">
+                            <label class="form-check-label" for="role5">Добавлять и удалять фото</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="status" id="role6" value="role6">
+                            <label class="form-check-label" for="role6">Подавать заявку на размещение в каталогах</label>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="font-weight-bold w-100">Подтверждение действий</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="status" id="role7" value="role7">
+                            <label class="form-check-label" for="role7">требуется подвтерждение адмна</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="status" id="role8" value="role8">
+                            <label class="form-check-label" for="role8">не требуется подвтерждение адмна</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm py-2 px-4">Добавить роль</button>
+                </div>
+                <div class="bg-white px-3 py-2 mb-3">
+                    <div class="form-group mb-2">
+                        <input type="text" name="" placeholder="Укажите название роли" class="w-25">
+                        <a href="#" title="удалить" class="text-danger float-right">удалить</a>
+                    </div>
+                    <div class="form-group mb-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="status" id="role1" value="role1">
+                            <label class="form-check-label" for="role1">Удалять компанию</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="status" id="role2" value="role2">
+                            <label class="form-check-label" for="role2">Добавлять компанию</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="status" id="role3" value="role3">
+                            <label class="form-check-label" for="role3">Изменять ключевую информацию</label>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="status" id="role4" value="role4">
+                            <label class="form-check-label" for="role4">Изменять базовую информацию</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="status" id="role5" value="role5">
+                            <label class="form-check-label" for="role5">Добавлять и удалять фото</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="status" id="role6" value="role6">
+                            <label class="form-check-label" for="role6">Подавать заявку на размещение в каталогах</label>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="font-weight-bold w-100">Подтверждение действий</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="status" id="role7" value="role7">
+                            <label class="form-check-label" for="role7">требуется подвтерждение адмна</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="status" id="role8" value="role8">
+                            <label class="form-check-label" for="role8">не требуется подвтерждение адмна</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm py-2 px-4">Добавить роль</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script> -->
+    <script src="jquery.js"></script>
+    <script src="popper.js"></script>
+    <script src="bootstrap.js"></script>
+</body>
+
+</html>

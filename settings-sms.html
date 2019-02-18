@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Лог</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle//QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="content m-auto">
+        <div class="row w-100">
+            <div class="sidebar col-md-2">
+                <ul class="list-group">
+                    <a class="list-group-item bg-gray text-white" href="./clients.html">Клиенты</a>
+                    <a class="list-group-item bg-gray text-white" href="./curator.html">Кураторы</a>
+                    <a class="list-group-item bg-gray text-white" href="./sales.html">Продажи</a>
+                    <a class="list-group-item bg-gray text-white" href="./log.html">Лог</a>
+                    <a class="list-group-item bg-gray text-white" href="./catalog.html">Каталоги</a>
+                    <a class="list-group-item bg-gray text-white" href="./notification.html">Уведомления</a>
+                    <a class="list-group-item bg-gray text-white active" href="./settings-roles.html">Настройки</a>
+                </ul>
+            </div>
+            <div class="col-md-10 bg-light pl-3 pt-3">
+                <div class="bg-white py-2 px-3 mb-3">
+                    <a class="text-dark" href="./settings-roles.html" title="Роли">Роли</a>
+                    <a class="font-weight-bold text-dark ml-3" href="./settings-sms.html" title="sms">SMS</a>
+                </div>
+                <div class="bg-white px-3 py-2 mb-3">
+                    <div class="form-group mb-2 w-50">
+                        <label class="font-weight-bold w-100">Настройка SMS рассылок</label>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label font-weight-bold" for="cost">Стоимость 1 SMS</label>
+                            <div class="col-md-4">
+                                <input class="form-control" type="text" name="cost" placeholder="0,5" value="0,5">
+                            </div>
+                            <div class="col-md-2">
+                                <select class="custom-select">
+                                    <option selected="" value="Р.">Р.</option>
+                                    <option value="Гр.">Гр.</option>
+                                    <option value="Тг.">Тг.</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label font-weight-bold" for="count">Кол-во символов
+                                в 1 SMS</label>
+                            <div class="col-md-4">
+                                <input class="form-control" type="text" name="count" placeholder="100" value="100">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm py-2 px-4">Сохранить</button>
+                </div>
+                <div class="bg-white px-3 py-2 mb-3">
+                    <div class="form-group mb-2 w-50">
+                        <label class="font-weight-bold w-100">Создание шаблона SMS рассылки</label>
+                        <div class="form-group row">
+                            <label class="col-md-5 col-form-label font-weight-bold" for="name">Название шаблона:</label>
+                            <div class="col-md-4">
+                                <input class="form-control" type="text" name="name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-12 col-form-label font-weight-bold" for="text">Текст сообщения</label>
+                            <div class="col-md-12">
+                                <textarea class="form-control" id="text" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm py-2 px-4">Добавить шаблон</button>
+                </div>
+                <div class="bg-white px-3 py-2 mb-3">
+                    <a href="#" title="удалить" class="text-danger float-right">удалить</a>
+                    <div class="form-group mb-2 w-50">
+                        <label class="font-weight-bold w-100">шаблон SMS рассылки № 1</label>
+                        <div class="form-group row">
+                            <label class="col-md-5 col-form-label font-weight-bold" for="name">Название шаблона:</label>
+                            <div class="col-md-4">
+                                <input class="form-control" type="text" name="name" value="Запрос отзыва">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-5 col-form-label font-weight-bold" for="link">Ссылка в сообщении:</label>
+                            <div class="col-md-4">
+                                <input class="form-control" type="text" name="link" value="системная ссылка">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-12 col-form-label font-weight-bold" for="text">Текст сообщения</label>
+                            <div class="col-md-12">
+                                <textarea class="form-control" id="text" rows="8">Здравствуйте, CLIENT NAME!
+Благодарим Вас за то, что воспользовались нашими услугами.
+Будем благодарны, если Вы сможете оставить отзыв о нашей компании.
+Хорошего Вам дня!
+
+COMPANY NAME
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm py-2 px-4">Сохранить изменение</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+</body>
+
+</html>
