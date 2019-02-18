@@ -2,182 +2,169 @@
 <html>
 
 <head>
-<<<<<<< Updated upstream:log.html
-  <title>Лог</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-=======
     <title>Лог</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
->>>>>>> Stashed changes:superAdmin/log.html
 </head>
 
 <body>
-  <div class="content m-auto">
-    <div class="row w-100">
-      <div class="sidebar col-md-2">
-        <ul class="list-group">
-          <a class="list-group-item bg-gray text-white" href="./clients.html">Клиенты</a>
-          <a class="list-group-item bg-gray text-white" href="./curator.html">Кураторы</a>
-          <a class="list-group-item bg-gray text-white" href="./sales.html">Продажи</a>
-          <a class="list-group-item bg-gray text-white active" href="./log.html">Лог</a>
-          <a class="list-group-item bg-gray text-white" href="./catalog.html">Каталоги</a>
-          <a class="list-group-item bg-gray text-white" href="./notification.html">Уведомления</a>
-          <a class="list-group-item bg-gray text-white" href="./settings-roles.html">Настройки</a>
-        </ul>
-      </div>
-      <div class="col-md-10 bg-light pl-3 pt-3">
-        <h1>Лог</h1>
-        <div class="catalog-filters my-3 form-inline">
-          <div class="form-inline float-left">
-            <select class="custom-select mr-2">
-              <option selected>Автор</option>
-              <option value="1">Админ</option>
-              <option value="2">System</option>
-              <option value="3">Владимир Иванов</option>
-              <option value="4">Мария Пупкина</option>
-            </select>
-            <select class="custom-select mr-2">
-              <option selected>Статус</option>
-              <option value="1">Одобрено</option>
-              <option value="2">Отклонено</option>
-              <option value="3">На проверке</option>
-            </select>
-            <select class="custom-select mr-2">
-              <option selected>Тип сообщения</option>
-              <option value="1">Изменения</option>
-              <option value="2">Системное сообщение</option>
-              <option value="3">Новый отзыв</option>
-              <option value="4">Sms рассылка</option>
-              <option value="5">Отключение/удаление компании</option>
-              <option value="6">Новая компания</option>
-            </select>
-          </div>
-          <div class="form-inline ml-5">
-            <p class="mr-2 my-0">Период <i class="fa fa-calendar ml-2"></i></p>
-            <input size="3" type="text" placeholder="с">
-            <span class="mx-2">-</span>
-            <input size="3" type="text" placeholder="по">
-          </div>
+    <div class="content m-auto">
+        <div class="row w-100">
+            <div class="sidebar col-md-2">
+                <ul class="list-group">
+                    <a class="list-group-item bg-gray text-white" href="./clients.html">Клиенты</a>
+                    <a class="list-group-item bg-gray text-white" href="./curator.html">Кураторы</a>
+                    <a class="list-group-item bg-gray text-white" href="./sales.html">Продажи</a>
+                    <a class="list-group-item bg-gray text-white active" href="./log.html">Лог</a>
+                    <a class="list-group-item bg-gray text-white" href="./catalog.html">Каталоги</a>
+                    <a class="list-group-item bg-gray text-white" href="./notification.html">Уведомления</a>
+                    <a class="list-group-item bg-gray text-white" href="./settings-roles.html">Настройки</a>
+                </ul>
+            </div>
+            <div class="col-md-10 bg-light pl-3 pt-3">
+                <h1>Лог</h1>
+                <div class="catalog-filters my-3 form-inline">
+                    <div class="form-inline float-left">
+                        <select class="custom-select mr-2">
+                            <option selected>Автор</option>
+                            <option value="1">Админ</option>
+                            <option value="2">System</option>
+                            <option value="3">Владимир Иванов</option>
+                            <option value="4">Мария Пупкина</option>
+                        </select>
+                        <select class="custom-select mr-2">
+                            <option selected>Статус</option>
+                            <option value="1">Одобрено</option>
+                            <option value="2">Отклонено</option>
+                            <option value="3">На проверке</option>
+                        </select>
+                        <select class="custom-select mr-2">
+                            <option selected>Тип сообщения</option>
+                            <option value="1">Изменения</option>
+                            <option value="2">Системное сообщение</option>
+                            <option value="3">Новый отзыв</option>
+                            <option value="4">Sms рассылка</option>
+                            <option value="5">Отключение/удаление компании</option>
+                            <option value="6">Новая компания</option>
+                        </select>
+                    </div>
+                    <div class="form-inline ml-5">
+                        <p class="mr-2 my-0">Период <i class="fa fa-calendar ml-2"></i></p>
+                        <input size="3" type="text" placeholder="с">
+                        <span class="mx-2">-</span>
+                        <input size="3" type="text" placeholder="по">
+                    </div>
+                </div>
+                <table class="table table-responsive bg-white">
+                    <thead>
+                        <tr>
+                            <th scope="col"><input type="checkbox" name="a" value="1417"></th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Дата</th>
+                            <th scope="col">Запись</th>
+                            <th scope="col" class="text-center">Тип сообщения</th>
+                            <th scope="col" class="text-center">Статус</th>
+                            <th scope="col" class="text-center">Автор</th>
+                            <th scope="col">Действие Администратора</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><input type="checkbox" name="a" value="1417"></th>
+                            <td class="align-middle">1</td>
+                            <td class="align-middle">23.01.2019<br>18:10</td>
+                            <td class="align-middle">Компания: <a href="#">220 вольт</a><br> Изменено название на 230 вольт </td>
+                            <td class="align-middle text-center">Изменение</td>
+                            <td class="align-middle text-center">Одобрено</td>
+                            <td class="align-middle text-center">220 вольт - <br>Админ</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" name="a" value="1417"></th>
+                            <td>2</td>
+                            <td class="align-middle">23.01.2019<br>18:10</td>
+                            <td class="align-middle">Компания: <a href="#">220 вольт</a><br> Изменено название на 230 вольт </td>
+                            <td>Изменение</td>
+                            <td>На проверке</td>
+                            <td class="align-middle text-center">Vladimir Martynov</td>
+                            <td><a href="#">Одобрить</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="7" class="border-0">
+                                <input type="text" class="w-100">
+                            </td>
+                            <td class="border-0"><a href="#">отклонить</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" name="a" value="1417"></th>
+                            <td>3</td>
+                            <td class="align-middle">23.01.2019<br>18:10</td>
+                            <td class="align-middle">Компания: <a href="#">220 вольт</a><br> Изменено название на 230 вольт </td>
+                            <td>Изменение</td>
+                            <td>Одобрено</td>
+                            <td class="align-middle text-center">Vladimir Martynov</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" name="a" value="1417"></th>
+                            <td>4</td>
+                            <td class="align-middle">23.01.2019<br>18:10</td>
+                            <td class="align-middle">Компания: <a href="#">220 вольт</a><br> Изменено название на 230 вольт </td>
+                            <td>Новый Отзыв</td>
+                            <td>Одобрено</td>
+                            <td class="align-middle text-center">admin</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" name="a" value="1417"></th>
+                            <td>5</td>
+                            <td class="align-middle">23.01.2019<br>18:10</td>
+                            <td class="align-middle">Компания: <a href="#">220 вольт</a><br> Изменено название на 230 вольт </td>
+                            <td>Системное сообщение</td>
+                            <td>Отклонено</td>
+                            <td class="align-middle text-center">System</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" name="a" value="1417"></th>
+                            <td>6</td>
+                            <td class="align-middle">23.01.2019<br>18:10</td>
+                            <td class="align-middle">Компания: <a href="#">220 вольт</a><br> Изменено название на 230 вольт </td>
+                            <td>Изменение</td>
+                            <td>Одобрено</td>
+                            <td class="align-middle text-center">Kira Matrosova</td>
+                            <td><a href="#">Одобрить</a></td>
+                        </tr>
+                        <tr>
+                            <td class="border-0" colspan="7">
+                                <input type="text" class="w-100">
+                            </td>
+                            <td class="border-0"><a href="#">отклонить</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="float-right bg-white p-2">
+                    <div class="form-inline">
+                        <span class="text-secondary mr-3">Строк на странице:</span>
+                        <select class="custom-select mr-3">
+                            <option selected>10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                        <span class="text-secondary mr-3">1-5 из 5</span>
+                        <span class="text-secondary">
+                            <i class="fas fa-angle-left fa-lg mr-3"></i>
+                            <i class="fas fa-angle-right fa-lg"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <table class="table table-responsive bg-white">
-          <thead>
-            <tr>
-              <th scope="col"><input type="checkbox" name="a" value="1417"></th>
-              <th scope="col">ID</th>
-              <th scope="col">Дата</th>
-              <th scope="col">Запись</th>
-              <th scope="col" class="text-center">Тип сообщения</th>
-              <th scope="col" class="text-center">Статус</th>
-              <th scope="col" class="text-center">Автор</th>
-              <th scope="col">Действие Администратора</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"><input type="checkbox" name="a" value="1417"></th>
-              <td class="align-middle">1</td>
-              <td class="align-middle">23.01.2019<br>18:10</td>
-              <td class="align-middle">Компания: <a href="#">220 вольт</a><br> Изменено название на 230 вольт </td>
-              <td class="align-middle text-center">Изменение</td>
-              <td class="align-middle text-center">Одобрено</td>
-              <td class="align-middle text-center">220 вольт - <br>Админ</td>
-
-            </tr>
-            <tr>
-              <th scope="row"><input type="checkbox" name="a" value="1417"></th>
-              <td>2</td>
-              <td class="align-middle">23.01.2019<br>18:10</td>
-              <td class="align-middle">Компания: <a href="#">220 вольт</a><br> Изменено название на 230 вольт </td>
-              <td>Изменение</td>
-              <td>На проверке</td>
-              <td class="align-middle text-center">Vladimir Martynov</td>
-              <td><a href="#">Одобрить</a></td>
-            </tr>
-            <tr>
-              <td colspan="7" class="border-0">
-                <input type="text" class="w-100">
-              </td>
-              <td class="border-0"><a href="#">отклонить</a></td>
-            </tr>
-            <tr>
-              <th scope="row"><input type="checkbox" name="a" value="1417"></th>
-              <td>3</td>
-              <td class="align-middle">23.01.2019<br>18:10</td>
-              <td class="align-middle">Компания: <a href="#">220 вольт</a><br> Изменено название на 230 вольт </td>
-              <td>Изменение</td>
-              <td>Одобрено</td>
-              <td class="align-middle text-center">Vladimir Martynov</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row"><input type="checkbox" name="a" value="1417"></th>
-              <td>4</td>
-              <td class="align-middle">23.01.2019<br>18:10</td>
-              <td class="align-middle">Компания: <a href="#">220 вольт</a><br> Изменено название на 230 вольт </td>
-              <td>Новый Отзыв</td>
-              <td>Одобрено</td>
-              <td class="align-middle text-center">admin</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row"><input type="checkbox" name="a" value="1417"></th>
-              <td>5</td>
-              <td class="align-middle">23.01.2019<br>18:10</td>
-              <td class="align-middle">Компания: <a href="#">220 вольт</a><br> Изменено название на 230 вольт </td>
-              <td>Системное сообщение</td>
-              <td>Отклонено</td>
-              <td class="align-middle text-center">System</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row"><input type="checkbox" name="a" value="1417"></th>
-              <td>6</td>
-              <td class="align-middle">23.01.2019<br>18:10</td>
-              <td class="align-middle">Компания: <a href="#">220 вольт</a><br> Изменено название на 230 вольт </td>
-              <td>Изменение</td>
-              <td>Одобрено</td>
-              <td class="align-middle text-center">Kira Matrosova</td>
-              <td><a href="#">Одобрить</a></td>
-            </tr>
-            <tr>
-              <td class="border-0" colspan="7">
-                <input type="text" class="w-100">
-              </td>
-              <td class="border-0"><a href="#">отклонить</a></td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="float-right bg-white p-2">
-          <div class="form-inline">
-            <span class="text-secondary mr-3">Строк на странице:</span>
-            <select class="custom-select mr-3">
-              <option selected>10</option>
-              <option value="20">20</option>
-              <option value="50">50</option>
-              <option value="100">100</option>
-            </select>
-            <span class="text-secondary mr-3">1-5 из 5</span>
-            <span class="text-secondary">
-              <i class="fas fa-angle-left fa-lg mr-3"></i>
-              <i class="fas fa-angle-right fa-lg"></i>
-            </span>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
 </body>
 
 </html>
