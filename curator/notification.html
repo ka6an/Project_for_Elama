@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Уведомления</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="content m-auto">
+        <div class="row w-100">
+            <div class="sidebar col-md-2">
+                <ul class="list-group">
+                    <a class="list-group-item bg-gray text-white" href="#">Мои компании</a>
+                    <a class="list-group-item bg-gray text-white active" href="./notification.html">Уведомления</a>
+                </ul>
+            </div>
+            <div class="col-md-10 bg-light pl-3 pt-3">
+                <h1>Уведомления</h1>
+                <div class="bg-white my-3">
+                    <form class="col-md-7 p-3">
+                        <div class="form-group row">
+                            <label for="fio" class="col-md-3 col-form-label font-weight-bold">Кому</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="fio" class="col-md-3 col-form-label font-weight-bold">Тема</label>
+                            <div class="col-md-7">
+                                <select class="custom-select">
+                                    <option value="Негативный отзыв">Негативный отзыв</option>
+                                    <option value="Положительный отзыв">Положительный отзыв</option>
+                                    <option value="Клиент прокомментировал ваш ответ">Клиент прокомментировал ваш ответ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="fio" class="col-md-3 col-form-label font-weight-bold">Площадка</label>
+                            <div class="col-md-7">
+                                <select class="custom-select">
+                                    <option value="Без площадки">Без площадки</option>
+                                    <option value="Facebook">Facebook</option>
+                                    <option value="Google">Google</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="comment" class="col-md-3 col-form-label font-weight-bold">Текст</label>
+                            <div class="col-md-7">
+                                <textarea class="form-control" id="text" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="fio" class="col-md-3 col-form-label font-weight-bold">Ссылка</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" id="link">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary px-5">Отправить сообщение</button>
+                    </form>
+                </div>
+                <div class="mb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="input-group md-form form-sm form-2 pl-0">
+                                <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Поиск по адресату" aria-label="Search">
+                                <div class="input-group-append">
+                                    <span class="input-group-text amber lighten-3" id="basic-text1"><i class="fas fa-search text-grey" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-inline ml-5">
+                            <p class="mr-2 my-0">Период <i class="fa fa-calendar ml-2"></i></p>
+                            <input size="3" type="text" placeholder="с">
+                            <span class="mx-2">-</span>
+                            <input size="3" type="text" placeholder="по">
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow bg-white p-3 mb-3">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <img src="https://d2i72ju5buk5xz.cloudfront.net/gsc/ILZAYF/62/57/9d/62579d1b618347ab9fa4a4c8ecc02ee5/images/%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD_-_%D1%83%D0%B2%D0%B5%D0%B4%D0%BE%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/u2032.png?token=4bc2fe9ca968c0c61545137950b46c4d" alt="">
+                                </div>
+                                <div class="col-3">
+                                    <time class="text-secondary">14:05 23.01.2019</time>
+                                </div>
+                            </div>
+                            <div>
+                                <p><strong>Компания:</strong> <a href="#" title="220 вольт">220 вольт</a></p>
+                            </div>
+                        </div>
+                        <div class="col-2 text-right">
+                            <p class="text-success">Прочитано</p>
+                            <p class="text-secondary">Исходящее</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10">
+                            <p>Для размещения информации о вашей компании требуется указать информацию о владельце компании.<br />
+                                <a href="#" title="mysite.com">www.mysite.com</a></p>
+                        </div>
+                        <div class="col-2 text-right">
+                            <p><a class="text-danger" href="">Удалить</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow bg-white p-3 mb-3">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <p class="m-0">Raiting Hunter</p>
+                                </div>
+                                <div class="col-3">
+                                    <time class="text-secondary">14:05 23.01.2019</time>
+                                </div>
+                            </div>
+                            <div>
+                                <p><strong>Компания:</strong> <a href="#" title="220 вольт">220 вольт</a></p>
+                                <p><strong>От кого:</strong> <strong>raiting hunter - admin</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-2 text-right">
+                            <p class="text-secondary">не прочитано</p>
+                            <p class="text-secondary">Исходящее</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10">
+                            <p>вам новый отзыв</p>
+                        </div>
+                        <div class="col-2 text-right">
+                            <p class="text-secondary">редактировать</p>
+                            <p><a class="text-danger" href="">Удалить</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow bg-white p-3 mb-3">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <p class="m-0">220 вольт</p>
+                                </div>
+                                <div class="col-3">
+                                    <time class="text-secondary">14:05 23.01.2019</time>
+                                </div>
+                            </div>
+                            <div>
+                                <p><strong>От кого:</strong> <strong>220 вольт - admin</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-2 text-right">
+                            <p class="text-secondary">не прочитано</p>
+                            <p class="text-secondary">Входящее</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10">
+                            <p>Клиент запросил смену реквизитов<br />
+                                Клиент пополнил баланс смс<br />
+                                клиент удалил компанию</p>
+                        </div>
+                        <div class="col-2 text-right">
+                            <p class="text-secondary">редактировать</p>
+                            <p><a class="text-danger" href="">Удалить</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+</body>
+
+</html>
